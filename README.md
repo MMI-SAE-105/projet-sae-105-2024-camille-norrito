@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Norrito
+- PRÉNOM : Camille
+- GROUPE : C1
+- URL du site : pubneoretro.camille-norrito.fr
+- URL FIGMA : https://www.figma.com/design/CL2etQos9OGmyMe9MqP3ub/Maquette-Pr%C3%A9histoire-du-Futur?node-id=0-1&t=LfSgeBQrEdc1z1Xt-1 
