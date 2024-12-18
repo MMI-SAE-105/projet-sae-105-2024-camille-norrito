@@ -1,0 +1,59 @@
+/* Header */
+.header {
+    position: relative;
+}
+
+/* Logo */
+.header__logo-image {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 5px;
+    
+}
+
+/* Menu Hamburger */
+.header__menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* Espacement entre les barres */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header__menu-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #F4F1EA;
+    transition: all 0.3s ease;
+}
+
+/* Langue FR */
+.header__lang {
+    position: absolute;
+    top: 20px;
+    left: 290px;
+}
+
+.header__lang-image {
+    width: 30px;
+    height: auto;
+}
+
+/* Image principale */
+.header__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
