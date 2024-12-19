@@ -8,16 +8,30 @@
  */
 
 /* Mes polices*/
+@font-face {
+    font-family: 'Chillax' format("truetype");
+    src: url(/assets/fonts/Chillax-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Aileron' format("truetype");
+    src: url(/assets/fonts/aileron.regular.otf);
+}
 
 /* Vendors */
+@import "vendors/normalize.css";
 
 /* Utils */
 @import "utils/fonts.css";
+@import "utils/variables.css";
 
 /* Base */
 @import "bases/main.css";
+@import "bases/media.css";
 
 /* Layout */
+@import "layout/footer.css";
+@import "layout/header.css";
 
 /* Components */
 @import "components/menu.css";
