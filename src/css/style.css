@@ -1,37 +1,32 @@
 /*  
-1. les polices via Google Font 
+1. Les polices via Google Font 
 2. Les libraries (Vendors) 
 3. Les variables (Utils) 
 4. Les règles générales (Base) 
 5. Les règles de composition (Layout) 
-6. Les composant d'interface (Components)
- */
+6. Les composants d'interface (Components)
+*/
 
-/* Mes polices*/
-@font-face {
-    font-family: 'Chillax' format("truetype");
-    src: url(/assets/fonts/Chillax-Regular.otf);
-}
+/* Mes polices */
 
-@font-face {
-    font-family: 'Aileron' format("truetype");
-    src: url(/assets/fonts/aileron.regular.otf);
-}
 
-/* Vendors */
-@import "vendors/normalize.css";
+/* Vendors 
+@import "../vendors/normalize.css";
+*/
 
 /* Utils */
-@import "utils/fonts.css";
-@import "utils/variables.css";
+@import "./utils/variables.css";
 
-/* Base */
-@import "bases/main.css";
-@import "bases/media.css";
+/* Base 
+@import "../bases/media.css";*/
+@import "./bases/main.css";
 
-/* Layout */
-@import "layout/footer.css";
-@import "layout/header.css";
+
+/* Layout*/
+@import "./layout/footer.css";
+@import "./layout/header.css";
+
 
 /* Components */
-@import "components/menu.css";
+@import "./components/menu.css";
+@import"./components/carrousel.css";

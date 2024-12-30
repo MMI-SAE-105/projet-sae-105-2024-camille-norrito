@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="../src/js/script.js" defer></script>
 
-    <link rel="icon" type="image/png" href="/assets/img/icon/logoplein.svg" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/icon/logoplein.svg" />
-    <link rel="shortcut icon" href="/assets/img/icon/logoplein.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/logoplein.svg" />
+
+
+    <link rel="icon" type="image/png" href="../assets/img/icon/logoplein.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/icon/logoplein.svg" />
+    <link rel="shortcut icon" href="../assets/img/icon/logoplein.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/icon/logoplein.svg" />
 </head>
 
 <body>
@@ -19,7 +22,7 @@
                 <img src="/assets/img/icon/logobeigesimple.svg" alt="Logo Pub Néo-Rétro" class="header__logo-image">
             </div>
             
-            <button class="header__menu-button" aria-label="Ouvrir le menu" tabindex="0">
+            <button class="header__menu-button" aria-label="Ouvrir le menu" aria-expanded="false" tabindex="0">
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
                 <span class="header__menu-bar"></span>
@@ -30,7 +33,7 @@
             </div>
         </nav>
     
-    <div class="menu" id="menu">
+    <div class="menu" id="menu" aria-hidden="true">
         <ul class="menu__list">
             <li class="menu__item"><a href="/fr/publicite.html" class="menu__link">LA PUBLICITÉ EN 2085</a></li>
             <li class="menu__item"><a href="/fr/films.html" class="menu__link">MINORITY REPORT</a></li>
@@ -53,7 +56,7 @@
         </div>
         </div>
         
-        <img src="/assets/img/group3.webp" alt="Télévision futuriste" class="header__image">
+        <img src="/assets/img/group3.webp" alt="Télévision futuriste" class="header__image no-margin">
         <h2 class="header__sloggan">La publicité du futur sous le prisme rétro</h2>
     </header>
 
@@ -127,8 +130,8 @@
     <footer class="footer">
 
     <div class="footer__title">
-        <h2 class="footer__heading">Pub Néo -Rétro</h2>
-        <p class="footer__subtitle">LE FUTUR RÉTRO</p>
+        <h1 class="footer__heading">Pub Néo -Rétro</h1>
+        <h4 class="footer__subtitle">LE FUTUR RÉTRO</h4>
     </div>
 
 
@@ -144,13 +147,13 @@
 
     <p class="footer__mention">
         <a href="https://blogdummi.fr/" class="footer__mention-link">
-            Projet réalisé en 2024 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard
+            <u>Projet réalisé en 2024 dans le cadre d'un exercice <br>pédagogique au département MMI de <br> Montbéliard</u>
         </a>
     </p>
 
 
     <div class="footer__social">
-        <h3 class="footer__social-heading">Nous suivre</h3>
+        <h2 class="footer__social-heading">Nous suivre</h2>
         <div class="footer__social-icons">
             <a href="linkedin.com/in/camille-norrito-9b25a0334" class="footer__social-link" aria-label="LinkedIn">
                 <img src="/assets/img/icon/linkedin.svg" alt="Logo LinkedIn" class="footer__icon">

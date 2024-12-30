@@ -1,0 +1,73 @@
+/* Conteneur principal du carrousel */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Masque les parties hors du conteneur */
+}
+
+/* Carrousel - conteneur des items */
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    /* Espacement entre les images */
+    padding: 5px;
+    /* Espacement interne */
+    width: 100%;
+    padding: 0 90px;
+    /* Prend toute la largeur disponible */
+    background-color: transparent;
+    /* Pas de fond */
+}
+
+/* Items du carrousel */
+.carousel-item {
+    flex: 0 0 100%;
+    /* Chaque image prend 100% de la largeur visible */
+    scroll-snap-align: center;
+    /* Centre l'image lorsqu'elle s'arrête */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    /* Préserve les proportions */
+    object-fit: cover;
+    display: block;
+}
+
+/* Boutons de navigation */
+.carousel-button {
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    background-color: var(--orange);
+    /* Couleur de fond des boutons */
+    color: var(--white);
+    /* Couleur du texte des boutons */
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    /* Place les boutons devant les images */
+}
+
+.carousel-button.prev-button {
+    left: 10px;
+}
+
+.carousel-button.next-button {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: var(--pink);
+    /* Change la couleur au survol */
+}

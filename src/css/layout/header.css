@@ -1,0 +1,101 @@
+/* Header */
+.header {
+    position: relative;
+    
+}
+
+.header__nav {
+    padding: 0px !important;
+}
+
+.header__image {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    display: block;
+    width: 100%;
+}
+
+.header__lang {
+    position: absolute;
+    top: 41px;
+    right: 40px;
+    z-index: 10;
+    
+}
+
+.header__logo {
+    position: absolute;
+    margin-top:10px;
+    left: 1px ;
+    z-index: 2;
+    /* Place le logo devant l'image */
+}
+
+/* Logo */
+.header__logo-image {
+    height: 55px;
+    display: flex;
+
+}
+
+/* Menu Hamburger */
+.header__menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute ;
+    top: 35px;
+    right: 25px;
+    z-index: 110;
+}
+
+
+.header__menu-bar {
+    width: 27px;
+    height: 3px;
+    background-color: var(--beige);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    position: relative;
+   
+}
+
+
+.menu--open .header__menu-bar:nth-child(1), 
+.menu--open .header__menu-bar:nth-child(3) {
+    display: none;
+}
+
+.menu--open .header__menu-bar:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+    box-shadow:
+        -10px -10px var(--black),
+        10px 10px var(--black),
+        10px -10px var(--black),
+        -10px 10px var(--black);
+}
+
+
+@media (max-width: 768px) {
+    .header__nav {
+        padding: 10px;
+    }
+
+    .header__menu-button {
+        margin-left: 0;
+        /* Réinitialise le margin-left pour les petits écrans */
+    }
+}
+
+

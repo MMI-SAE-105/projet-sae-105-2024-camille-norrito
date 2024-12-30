@@ -1,11 +1,135 @@
-.body {
-    font-family: "Aileron";
+head {
+    background-color: var(--beige);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.content__title {
-    font-family: "Agrandir";
-    
+body {
+    background-color: var(--beige);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+
+/* Typographie principale */
+
+/* H1 */
+h1 {
+    font-family: 'Aileron', sans-serif;
+    /* Police utilisée */
+    font-weight: 800;
+    /* Heavy */
+    font-size: 30px;
+    /* Taille */
+    line-height: 1.5;
+    /* 150% */
+    color: var(--darkgray);
+    /* Gris foncé */
+}
+
+/* H2 */
+h2 {
+    font-family: 'Chillax', sans-serif;
+    /* Police utilisée */
+    font-weight: bold;
+    /* Gras */
+    font-size: 19px;
+    /* Taille */
+    line-height: 1.25;
+    /* 125% */
+    color: black;
+    /* Noir */
+}
+
+/* H3 */
+h3 {
+    font-family: 'Agrandir', sans-serif;
+    /* Police utilisée */
+    font-weight: 700;
+    /* Grand bold */
+    font-size: 14px;
+    /* Taille */
+    line-height: 1.5;
+    /* 150% */
+    color: var(--brown-gray);
+    /* Gris marron */
+}
+
+/* H4 */
+h4 {
+    font-family: 'Agrandir', sans-serif;
+    /* Police utilisée */
+    font-weight: 700;
+    /* Grand bold */
+    font-size: 10px;
+    /* Taille */
+    line-height: 1.5;
+    /* 150% */
+    color: var(--darkgray);
+    /* Gris foncé */
+}
+
+/* H5 */
+h5 {
+    font-family: 'Chillax', sans-serif;
+    /* Police utilisée */
+    font-weight: semibold;
+    /* Semibold */
+    font-size: 16px;
+    /* Taille */
+    line-height: 1.0;
+    /* 100% */
+    color: black;
+    /* Noir */
+}
+
+/* Paragraphe */
+p {
+    font-family: 'Excon', sans-serif;
+    /* Utilisation de la police Excon */
+    font-size: var(--fs-body);
+    /* Taille du texte */
+    font-weight: 400;
+    /* Regular */
+    line-height: 1.5;
+    /* Espacement des lignes */
+    color: var(--black);
+    /* Couleur grise */
+}
+
+/* Centrer toutes les images avec une marge de 22px */
+img {
+    display: block;
+    /* Pour permettre le centrage avec margin */
+    margin: 0 auto;
+    /* Centre horizontalement */
+    padding: 0;
+    /* Pas de padding par défaut */
+    max-width: calc(100% - 44px);
+    /* Réduit la largeur pour respecter les marges de 22px de chaque côté */
+    width: auto;
+    /* Préserve le ratio de l'image */
+    margin-left: 22px;
+    /* Marge gauche */
+    margin-right: 22px;
+    /* Marge droite */
+}
+
+.no-margin {
+    margin: 0;
+    /* Supprime toutes les marges */
+    margin-left: 0;
+    /* Supprime la marge gauche */
+    margin-right: 0;
+    /* Supprime la marge droite */
+    max-width: 100%;
+    /* Réinitialise la largeur maximale */
+}
+
 
 .separator::before {
     content: "";
