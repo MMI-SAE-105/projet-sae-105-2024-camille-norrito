@@ -87,6 +87,14 @@ h5 {
     /* Noir */
 }
 
+h6 {
+    font-family:'Aileron', sans-serif;
+    font-weight: heavy;
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--beige);
+}
+
 /* Paragraphe */
 p {
     font-family: 'Excon', sans-serif;

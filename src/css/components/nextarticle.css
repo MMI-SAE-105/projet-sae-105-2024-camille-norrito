@@ -1,0 +1,97 @@
+/* next article */
+
+/* Conteneur principal */
+.next-article {
+    background-color: var(--black);
+    /* Fond noir */
+    text-align: center;
+    /* Centrer le contenu */
+    padding: 15px;
+    /* Espacement intérieur */
+    color: var(--beige);
+    /* Couleur du texte */
+}
+
+/* Titre "À venir" */
+.next-article__title {
+    font-size: 16px;
+    /* Taille du texte */
+    font-weight: lighter;
+    /* Police plus légère */
+    margin: 0;
+    color: var(--soft-gray);
+    /* Couleur grisée */
+}
+
+/* Sous-titre "Le film" */
+.next-article__subtitle {
+    font-size: 24px;
+    /* Taille du texte */
+    font-weight: bold;
+    /* Texte en gras */
+    margin: 0 0 10px;
+    /* Espacement au-dessus et en-dessous */
+    color: var(--soft-gray);
+    /* Couleur beige */
+}
+
+/* Bouton principal */
+.next-article__button {
+    display: inline-flex;
+    /* Pour aligner le texte et l'icône */
+    align-items: center;
+    /* Centre verticalement */
+    justify-content: center;
+    /* Centre horizontalement */
+    padding: 10px 15px;
+    /* Espacement intérieur */
+    background-color: var(--beige);
+    /* Fond beige */
+    color: var(--orange);
+    /* Texte orange */
+    text-decoration: none;
+    /* Pas de soulignement */
+    border-radius: 30px;
+    /* Bords arrondis */
+    border: 2px solid var(--orange);
+    /* Bordure orange */
+    font-size: var(--fs-h5);
+    font-family: var(--font-paragraph);
+    font-weight: lighter;
+    /* Texte light */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    /* Animation sur hover */
+}
+
+/* Icône (image) dans le bouton */
+.next-article__icon {
+    margin: 7px 7px 7px 7px;
+    width: 20px;
+    /* Largeur de l'image */
+    height: auto;
+    /* Conserve les proportions */
+}
+
+/* Texte dans le bouton */
+.next-article__text {
+    color: var(--orange);
+    /* Texte orange */
+    font-weight: lighter;
+    /* Texte light */
+}
+
+/* Effet au survol */
+.next-article__button:hover {
+    background-color: var(--orange);
+    /* Fond orange au survol */
+    color: var(--beige);
+    /* Texte beige */
+    transform: scale(1.05);
+    /* Agrandissement au survol */
+}
+
+/* Effet au survol de l'icône */
+.next-article__button:hover .next-article__icon {
+    filter: brightness(0.8);
+    /* Assombrit légèrement l'image au survol */
+}
