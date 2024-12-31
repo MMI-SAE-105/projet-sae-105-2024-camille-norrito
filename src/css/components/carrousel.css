@@ -1,3 +1,6 @@
+
+
+
 /* Conteneur principal du carrousel */
 .carousel-container {
     position: relative;
@@ -71,3 +74,4 @@
     background-color: var(--pink);
     /* Change la couleur au survol */
 }
+

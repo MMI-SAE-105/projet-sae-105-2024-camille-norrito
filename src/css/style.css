@@ -28,6 +28,10 @@
 
 
 /* Components */
+@import "./components/fonts.css";
 @import "./components/menu.css";
 @import"./components/carrousel.css";
+@import "./components/hero.css";
 @import"./components/nextarticle.css";
+@import "./components/metadonnee.css";
+@import "./components/trailer.css";

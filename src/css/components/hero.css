@@ -1,0 +1,36 @@
+
+
+/* Section "Citation" */
+.hero {
+    background-color: var(--beige);
+    padding: 20px;
+    border-top: 1px solid var(--black);
+}
+
+.hero__text {
+    font-size: var(--fs-h3);
+    font-family: var(--font-alt);
+    color: var(--brown-gray);
+    line-height: var(--lh-loose);
+    max-width: 600px;
+    position: relative;
+    padding: 20px 0 0 20px;
+}
+
+.hero__text::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--gray);
+}
+
+.hero__text::after {
+    display: block;
+    font-size: var(--fs-body);
+    font-weight: 300;
+    margin-top: 10px;
+    color: var(--black);
+}

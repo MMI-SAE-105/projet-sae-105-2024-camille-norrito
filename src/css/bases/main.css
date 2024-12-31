@@ -20,15 +20,10 @@ body {
 /* H1 */
 h1 {
     font-family: 'Aileron', sans-serif;
-    /* Police utilisée */
     font-weight: 800;
-    /* Heavy */
     font-size: 30px;
-    /* Taille */
     line-height: 1.5;
-    /* 150% */
     color: var(--darkgray);
-    /* Gris foncé */
 }
 
 /* H2 */
@@ -41,7 +36,7 @@ h2 {
     /* Taille */
     line-height: 1.25;
     /* 125% */
-    color: black;
+    color: var(--darkgray);
     /* Noir */
 }
 
@@ -101,7 +96,7 @@ p {
     /* Utilisation de la police Excon */
     font-size: var(--fs-body);
     /* Taille du texte */
-    font-weight: 400;
+    font-weight: 200;
     /* Regular */
     line-height: 1.5;
     /* Espacement des lignes */
@@ -125,6 +120,16 @@ img {
     /* Marge gauche */
     margin-right: 22px;
     /* Marge droite */
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content p {
+    margin: 0 24px;
 }
 
 .no-margin {

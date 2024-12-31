@@ -36,6 +36,7 @@
 
 /* Logo */
 .header__logo-image {
+    margin: 17px 23px;
     height: 55px;
     display: flex;
 
@@ -58,16 +59,46 @@
     z-index: 110;
 }
 
+/* Section principale de l'article */
+.header-article {
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--black);
+}
+
+.header-article__container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.header-article__title {
+    margin: 80px 0 10px;
+    line-height: 110%;
+}
+
+.header-article__subtitle {
+    font-size: var(--fs-h3);
+    font-family: var(--font-alt);
+    font-weight: 650;
+    color: var(--darkgray);
+    margin: 0;
+}
 
 .header__menu-bar {
     width: 27px;
-    height: 3px;
-    background-color: var(--beige);
+    height: 2px;
+    background-color: var(--black);
     margin: 3px 0;
     transition: all 0.3s ease;
     position: relative;
    
 }
+
+.home-page .header__menu-bar {
+    background-color: var(--beige);
+    }
+
 
 
 .menu--open .header__menu-bar:nth-child(1), 
