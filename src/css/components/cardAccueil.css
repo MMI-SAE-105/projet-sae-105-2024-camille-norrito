@@ -1,0 +1,32 @@
+.content__accueil--description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--orange);
+    border-radius: 20px;
+    color: var(--beige);
+    font-family: var(--font-paragraph);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    line-height: var(--lh-loose);
+    position: relative;
+    box-shadow: inset 2px 6px 3px rgba(0, 0, 0, 0.2);
+    max-width: 70%; 
+    margin: 15px auto 55px;
+}
+
+/* Texte dans la description */
+.content__accueil--description p {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+
+.content__accueil--arrow a img{
+    width: 25px;
+    height: 25px;
+    margin: 50px 0 0 0;
+    
+}

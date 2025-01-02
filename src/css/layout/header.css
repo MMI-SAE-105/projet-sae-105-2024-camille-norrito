@@ -8,6 +8,26 @@
     padding: 0px !important;
 }
 
+.header__sloggan {
+    color: var(--darkgray);
+    line-height: var(--lh-loose);
+    max-width: 600px;
+    position: relative;
+    padding: 20px 0 50px 20px;
+    
+}
+
+
+.header__sloggan::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    width: 1px;
+    height: 45%;
+    background-color: var(--darkgray);
+}
+
 .header__image {
     position: relative;
     z-index: 1;
@@ -31,18 +51,15 @@
     margin-top:10px;
     left: 1px ;
     z-index: 2;
-    /* Place le logo devant l'image */
 }
 
-/* Logo */
+
 .header__logo-image {
     margin: 17px 23px;
     height: 55px;
     display: flex;
-
 }
 
-/* Menu Hamburger */
 .header__menu-button {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,29 @@
+.header-article {
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--black);
+}
+
+.header-article__container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.header-article__title {
+    margin: 70px 0 10px;
+    line-height: 110%;
+}
+
+.header-article__subtitle {
+    font-size: var(--fs-h3);
+    font-family: var(--font-alt);
+    font-weight: 650;
+    color: var(--darkgray);
+    margin: 0;
+}
 
 
-/* Section "Citation" */
 .hero {
     background-color: var(--beige);
     padding: 20px;

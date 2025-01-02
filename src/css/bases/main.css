@@ -145,19 +145,31 @@ img {
 
 .separator {
     display: block;
-    clear: both;
-    margin-top: 55px;
+    width: 50%;
+    /* Le séparateur principal prend 50% de la largeur */
+    height: 1px;
+    /* Épaisseur de 1 pixel */
+    background-color: black;
+    /* Couleur noire */
+    margin: 45px auto 55px auto;
+    /* Marge supérieure de 25px et inférieure de 55px, centré */
 }
 
-.separator::before {
-    content: "";
-    display: block;
-    background: black;
+.separator__left {
+    display: inline-block;
     width: 50%;
     height: 1px;
-    margin: auto;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    clear: both;
+    background-color: black;
+    margin: 45px 0 55px 0;
+    
+}
+
+.separator__right {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: 45px 0px 55px 215px;
+    
 }
 
