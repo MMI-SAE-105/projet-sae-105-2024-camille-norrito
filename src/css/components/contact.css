@@ -1,0 +1,116 @@
+.hero-apropos {
+    text-align: center;
+    background-color: var(--beige);
+    padding: 20px 15px;
+    border-top: 1px solid var(--black);
+}
+
+
+.contact-form {
+    padding: 20px 15px;
+    background-color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-family: var(--font-title);
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--darkgray);
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-family: var(--font-paragraph);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--darkgray);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    font-family: var(--font-paragraph);
+    font-size: var(--fs-body);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--darkgray);
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form {
+    padding: 20px 15px;
+    background-color: var(--beige);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-family: var(--font-title);
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--darkgray);
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-family: var(--font-paragraph);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--darkgray);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    font-family: var(--font-paragraph);
+    font-size: var(--fs-body);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    background-color: var(--off-white);
+    color: var(--darkgray);
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: var(--font-title);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: var(--off-white);
+    color: var(--orange);
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    font-size: var(--fs-h5);
+    font-family: var(--font-paragraph);
+    font-weight: lighter;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+
+

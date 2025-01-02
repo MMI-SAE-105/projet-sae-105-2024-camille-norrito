@@ -29,7 +29,9 @@
 
 /* Components */
 @import "./components/fonts.css";
+@import "./components/content.css";
 @import "./components/menu.css";
+@import "./components/contact.css";
 @import"./components/carrousel.css";
 @import "./components/cardAccueil.css";
 @import "./components/hero.css";
