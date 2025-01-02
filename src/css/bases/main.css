@@ -143,15 +143,21 @@ img {
     /* Réinitialise la largeur maximale */
 }
 
+.separator {
+    display: block;
+    clear: both;
+    margin-top: 55px;
+}
 
 .separator::before {
     content: "";
+    display: block;
     background: black;
     width: 50%;
     height: 1px;
-    display: block;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-bottom: 55px;
-
+    clear: both;
 }
+

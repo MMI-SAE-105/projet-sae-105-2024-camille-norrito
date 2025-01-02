@@ -19,7 +19,7 @@
     font-weight: lighter;
     /* Police plus légère */
     margin: 0;
-    color: var(--soft-gray);
+    color: var(--white);
     /* Couleur grisée */
 }
 
@@ -30,8 +30,8 @@
     font-weight: bold;
     /* Texte en gras */
     margin: 0 0 10px;
-    /* Espacement au-dessus et en-dessous */
-    color: var(--soft-gray);
+    padding-bottom: 3%;
+    color: var(--white);
     /* Couleur beige */
 }
 
@@ -45,7 +45,7 @@
     /* Centre horizontalement */
     padding: 10px 15px;
     /* Espacement intérieur */
-    background-color: var(--beige);
+    background-color: var(--white);
     /* Fond beige */
     color: var(--orange);
     /* Texte orange */

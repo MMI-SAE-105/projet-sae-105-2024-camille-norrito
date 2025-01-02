@@ -1,5 +1,5 @@
 .content__metadonnee {
-    display: flex;
+    display: block;
     background-color: var(--green);
     color: var(--beige);
     font-family: 'Excon', sans-serif;
@@ -10,4 +10,8 @@
     border-radius: 15px;
     box-shadow: inset 0 4px 2px rgba(0, 0, 0, 0.2);
     max-width: 200px;
+    float: right; 
+    margin-left: 15px;
+    margin-bottom: 15px;
+
 }
