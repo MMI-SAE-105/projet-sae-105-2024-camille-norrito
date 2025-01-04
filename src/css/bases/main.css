@@ -122,6 +122,7 @@ img {
     /* Marge droite */
 }
 
+
 .content h1,
 .content h2,
 .content h3,
@@ -146,13 +147,9 @@ img {
 .separator {
     display: block;
     width: 50%;
-    /* Le séparateur principal prend 50% de la largeur */
     height: 1px;
-    /* Épaisseur de 1 pixel */
     background-color: black;
-    /* Couleur noire */
     margin: 45px auto 55px auto;
-    /* Marge supérieure de 25px et inférieure de 55px, centré */
 }
 
 .separator__left {

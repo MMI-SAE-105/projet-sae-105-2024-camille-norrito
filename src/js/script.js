@@ -31,21 +31,54 @@ document.addEventListener('click', (e) => {
 
 
 
-//carousel
-const carousel = document.querySelector('.carousel');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
+// carousel
+// const carousel = document.querySelector('.carousel');
+// const prevButton = document.querySelector('.prev-button');
+// const nextButton = document.querySelector('.next-button');
 
-prevButton.addEventListener('click', () => {
-    carousel.scrollBy({
-        left: -carousel.offsetWidth, // Défiler vers la gauche
-        behavior: 'smooth'
+// if (prevButton && nextButton) {
+//     prevButton.addEventListener('click', () => {
+//         carousel.scrollBy({
+//             left: -carousel.offsetWidth, // Défiler vers la gauche
+//             behavior: 'smooth'
+//         });
+//     });
+
+//     nextButton.addEventListener('click', () => {
+//         carousel.scrollBy({
+//             left: carousel.offsetWidth, // Défiler vers la droite
+//             behavior: 'smooth'
+//         });
+//     });
+// }
+
+
+
+
+//autres projets accordéons
+console.log("Script.js chargé avec succès");
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const projectItems = document.querySelectorAll(".project__item");
+
+    projectItems.forEach((item) => {
+        const logo = item.querySelector(".project__logo");
+
+        if (logo) {
+            logo.addEventListener("click", () => {
+                console.log("Logo cliqué :", logo.alt); // Affiche dans la console le logo cliqué
+                projectItems.forEach((el) => {
+                    if (el !== item) el.classList.remove("active");
+                });
+
+                item.classList.toggle("active");
+                console.log("Classe active ajoutée :", item.classList.contains("active"));
+            });
+        } else {
+            console.error("Logo non trouvé pour cet élément :", item);
+        }
     });
 });
 
-nextButton.addEventListener('click', () => {
-    carousel.scrollBy({
-        left: carousel.offsetWidth, // Défiler vers la droite
-        behavior: 'smooth'
-    });
-});
+

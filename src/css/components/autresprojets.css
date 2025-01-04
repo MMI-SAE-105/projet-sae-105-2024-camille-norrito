@@ -1,0 +1,62 @@
+.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--beige);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.project__item {
+    position: relative;
+    background-color: var(--soft-gray);
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: visible;
+    transition: height 0.3s ease, padding 0.3s ease;
+    height: 80px;
+    /* Hauteur par défaut pour afficher uniquement le logo */
+    text-align: center;
+    /* Centre les éléments */
+}
+
+/* Par défaut, cache les noms et titres */
+.project__name,
+.project__title {
+    display: none;
+}
+
+.project__item.active {
+    height: auto;
+    padding: 20px;
+}
+
+/* Montre les noms et titres lorsque .active est appliqué */
+.project__item.active .project__name,
+.project__item.active .project__title {
+    display: block !important;
+}
+
+/* Centre le logo */
+.project__logo {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    /* Ajuste la taille du logo */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project__item:hover .project__logo {
+    transform: scale(1.1);
+}
+
+/* Animation pour ouverture */
+.project__item.active {
+    height: auto;
+    /* Permet à l'article de s'agrandir */
+    padding: 20px;
+}

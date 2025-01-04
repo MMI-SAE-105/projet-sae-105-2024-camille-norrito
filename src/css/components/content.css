@@ -16,7 +16,15 @@
 
 .content__legende {
     padding-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.content__legende-portrait {
+    display: block;
+    font-style: italic;
+    margin : 5px 0px 4px 87px !important;
+    padding-bottom: 40px;
 }
 
 .content__title {

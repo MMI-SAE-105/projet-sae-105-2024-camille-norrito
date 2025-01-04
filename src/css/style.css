@@ -17,8 +17,7 @@
 /* Utils */
 @import "./utils/variables.css";
 
-/* Base 
-@import "../bases/media.css";*/
+/* Base */
 @import "./bases/main.css";
 
 
@@ -28,12 +27,15 @@
 
 
 /* Components */
+@import "./components/apropos.css";
+@import "./components/autresprojets.css";
 @import "./components/fonts.css";
 @import "./components/content.css";
 @import "./components/menu.css";
 @import "./components/contact.css";
 @import"./components/carrousel.css";
 @import "./components/cardAccueil.css";
+@import "./components/glossaire.css";
 @import "./components/hero.css";
 @import"./components/nextarticle.css";
 @import "./components/metadonnee.css";

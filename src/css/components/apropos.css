@@ -1,0 +1,13 @@
+.img__apropos {
+    display: block;
+    /* Permet de centrer avec margin */
+    max-width: 60%;
+    /* Redimensionne à 60% de sa taille normale */
+    margin: 40px auto;
+    /* Centre horizontalement l'image */
+    height: auto;
+}
+
+section.hero-apropos {
+    padding: 45px 15px;
+}
