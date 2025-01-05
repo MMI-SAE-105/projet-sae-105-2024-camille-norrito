@@ -1,40 +1,38 @@
-
-
-
-/* Conteneur principal du carrousel */
 .carousel-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    /* Masque les parties hors du conteneur */
+    width: 100%;
+    max-width: 850px; 
+    margin: 0 auto;
 }
 
 /* Carrousel - conteneur des items */
 .carousel {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    gap: 5px;
-    padding: 5px;
+    gap: 10px;
+    padding: 0 20px;
     width: 100%;
-    padding: 0 90px;
     background-color: transparent;
 }
 
 /* Items du carrousel */
 .carousel-item {
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 40px);
     scroll-snap-align: center;
     overflow: hidden;
 }
 
 .carousel-item img {
+    aspect-ratio: 16 / 16;
+    height: auto;
     width: 100%;
     height: auto;
-    /* Préserve les proportions */
     object-fit: cover;
     display: block;
 }
@@ -42,14 +40,13 @@
 /* Boutons de navigation */
 .carousel-button {
     position: absolute;
-    top: 95%;
+    top: 50%;
     transform: translateY(-50%);
-    background-color: var(--orange);
-    /* Couleur de fond des boutons */
-    color: var(--white);
-    /* Couleur du texte des boutons */
-    border-radius: 10px;
-    border: none;
+    background-color: var(--white);
+    color: var(--orange);
+    text-decoration: none;
+    border: 2px solid var(--orange);
+    border-radius: 40px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     z-index: 10;
@@ -57,15 +54,18 @@
 }
 
 .carousel-button.prev-button {
+    background-color: var(--light-orange);
+    color: var(--beige);
     left: 10px;
 }
 
 .carousel-button.next-button {
+    background-color: var(--light-orange);
+    color: var(--beige);
     right: 10px;
 }
 
 .carousel-button:hover {
-    background-color: var(--pink);
-    /* Change la couleur au survol */
+    background-color: var(--light-orange);
 }
 

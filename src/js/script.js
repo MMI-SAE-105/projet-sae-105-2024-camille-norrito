@@ -32,26 +32,27 @@ document.addEventListener('click', (e) => {
 
 
 
-// carousel
-// const carousel = document.querySelector('.carousel');
-// const prevButton = document.querySelector('.prev-button');
-// const nextButton = document.querySelector('.next-button');
+// Sélection des éléments du carrousel
+const carousel = document.querySelector('.carousel');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
 
-// if (prevButton && nextButton) {
-//     prevButton.addEventListener('click', () => {
-//         carousel.scrollBy({
-//             left: -carousel.offsetWidth, // Défiler vers la gauche
-//             behavior: 'smooth'
-//         });
-//     });
+if (prevButton && nextButton && carousel) {
+    prevButton.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: -carousel.offsetWidth, // Défiler vers la gauche
+            behavior: 'smooth'
+        });
+    });
 
-//     nextButton.addEventListener('click', () => {
-//         carousel.scrollBy({
-//             left: carousel.offsetWidth, // Défiler vers la droite
-//             behavior: 'smooth'
-//         });
-//     });
-// }
+    nextButton.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: carousel.offsetWidth, // Défiler vers la droite
+            behavior: 'smooth'
+        });
+    });
+}
+
 
 
 
