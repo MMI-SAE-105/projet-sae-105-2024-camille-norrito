@@ -1,5 +1,3 @@
-/* Trailer de Minority Report */
-/* Titre principal des sections */
 .trailer__title {
     font-family: var(--font-main);
     font-size: var(--fs-h2);
@@ -9,24 +7,25 @@
     text-align: left;
     padding-bottom: 3%;
 }
+
  .trailer__legend {
     padding: 1% 5%; 
  }
-/* Conteneur des articles */
+
+
 .gallery__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .gallery__title {
     padding: 5% 2%;
 }
 
-/* Titre des films */
+
 .gallery__movie-title {
     font-family: var(--font-title);
     font-size: var(--fs-h3);
@@ -38,7 +37,7 @@
     
 }
 
-/* Description des films */
+
 .gallery__description {
     font-family: var(--font-paragraph);
     font-size: var(--fs-body);
@@ -46,20 +45,17 @@
     color: var(--brown-gray);
     line-height: var(--lh-loose);
     padding: 0 12%; 
-    width: calc(100% - 11%); /* Ajuste la largeur pour que padding ne dépasse pas */
-    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
-    margin-left: auto; /* Centre horizontalement */
+    width: calc(100% - 11%); 
+    margin-left: auto; 
     margin-right: auto;
+    padding-bottom: 8%;
     box-sizing: border-box;
 }
 
-/* Conteneur des vidéos */
+
 .gallery__video-container {
     margin-bottom: 15px;
-    /* Espacement sous la vidéo */
 }
-
-
 
 
 .trailer__video {
@@ -69,7 +65,7 @@
     margin: 0 auto;
 }
 
-/* Vidéos de la galerie */
+
 .gallery__video-container video {
     width: 65%;
     height: auto;
@@ -77,9 +73,8 @@
     margin: 0 auto;
 }
 
-/* Centrage global pour les vidéos */
+
 .trailer,
 .gallery__item {
     text-align: left;
-    /* Centre les contenus dans leurs conteneurs */
 }

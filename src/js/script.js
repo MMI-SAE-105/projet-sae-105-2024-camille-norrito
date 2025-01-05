@@ -31,6 +31,7 @@ document.addEventListener('click', (e) => {
 
 
 
+
 // carousel
 // const carousel = document.querySelector('.carousel');
 // const prevButton = document.querySelector('.prev-button');

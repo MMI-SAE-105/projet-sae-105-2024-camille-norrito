@@ -1,0 +1,117 @@
+/* Conteneur principal de la frise */
+.timeline {
+    position: relative;
+    padding: 50px 20px;
+    background-color: var(--beige);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.timeline__container {
+    position: relative;
+    
+}
+
+.timeline__container::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 0.5px;
+    height: 100%;
+    background-color: var(--black);
+    z-index: 0;
+}
+
+/* Conteneur de chaque élément */
+.timeline__item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.timeline__item::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    transform: translateY(0.4rem);
+    width: 20px;
+    height: 1px;
+    background-color: var(--black);
+    z-index: 1;
+}
+
+.timeline__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: var(--white);
+    color: var(--orange);
+    margin: 15px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid var(--orange);
+    font-size: var(--fs-h5);
+    font-family: var(--font-paragraph);
+    font-weight: lighter;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline__button:hover {
+    background-color: var(--light-orange);
+    color: var(--beige);
+    transform: scale(1.05);
+}
+
+.timeline__title {
+    text-align: center;
+    margin: 0 auto 50px !important;
+}
+
+.timeline__sous-title {
+    margin: 0 auto 25px !important;
+
+}
+
+/* Image */
+.timeline__image {
+    display: block;
+    width: 65%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Année */
+.timeline__year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--darkgray);
+    margin-bottom: 10px;
+}
+
+/* Description */
+.timeline__description {
+    font-size: 1rem;
+    color: var(--gray);
+    line-height: 1.5;
+    padding-bottom: 10%;
+}
+
+
+@media (max-width: 768px) {
+    .timeline {
+        padding: 30px 10px;
+    }
+
+    .timeline__item {
+        padding-left: 40px;
+    }
+
+    .timeline__image {
+        max-width: 100%;
+    }
+}

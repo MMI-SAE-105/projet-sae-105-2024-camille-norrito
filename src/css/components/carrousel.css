@@ -18,22 +18,16 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     gap: 5px;
-    /* Espacement entre les images */
     padding: 5px;
-    /* Espacement interne */
     width: 100%;
     padding: 0 90px;
-    /* Prend toute la largeur disponible */
     background-color: transparent;
-    /* Pas de fond */
 }
 
 /* Items du carrousel */
 .carousel-item {
     flex: 0 0 100%;
-    /* Chaque image prend 100% de la largeur visible */
     scroll-snap-align: center;
-    /* Centre l'image lorsqu'elle s'arrête */
     overflow: hidden;
 }
 
