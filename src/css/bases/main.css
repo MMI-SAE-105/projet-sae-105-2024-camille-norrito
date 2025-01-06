@@ -161,10 +161,16 @@ img {
     
 }
 
-.parent-class {
-    display: flex;
-    justify-content: flex-end;
-} 
+
+.separator__left-accueil {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: 45px 0 20px 0;
+
+}
+
 
 .separator__right {
     display: inline-block;
@@ -176,8 +182,22 @@ img {
     position: relative;
 }
 
+.separator__right-accueil {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: 25px 0 55px 0;
+
+}
+
 @media (max-width: 768px) {
     .separator__right {
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .separator__right-accueil {
         width: 50%;
         margin-left: 50%;
     }

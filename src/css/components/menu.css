@@ -78,7 +78,6 @@
     height: 35px;
 }
 
-/* Empêche le défilement lorsque le menu est ouvert */
 .no-scroll {
     overflow: hidden;
     height: 100%;
