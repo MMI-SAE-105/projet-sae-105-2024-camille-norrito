@@ -78,3 +78,14 @@
     height: 35px;
 }
 
+@media (max-width: 768px) {
+    .menu__list {
+        margin-top: 100px;
+        /* Ajustez en fonction de l'espace */
+    }
+
+    .menu {
+        padding-top: 20px;
+        /* Ajoutez un espace pour éloigner la barre de la croix */
+    }
+}
