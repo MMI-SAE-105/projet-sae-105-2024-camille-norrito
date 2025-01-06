@@ -13,6 +13,13 @@ menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open', isMenuOpen);
     menuButton.classList.toggle('menu--open', isMenuOpen);
 
+    // Ajoute ou retire la classe no-scroll au body
+    if (isMenuOpen) {
+        document.body.classList.add('no-scroll');
+    } else {
+        document.body.classList.remove('no-scroll');
+    }
+
     // Met à jour les attributs d'accessibilité
     menu.setAttribute('aria-hidden', !isMenuOpen);
     menuButton.setAttribute('aria-expanded', isMenuOpen);
@@ -26,13 +33,17 @@ document.addEventListener('click', (e) => {
         menuButton.classList.remove('menu--open');
         menu.setAttribute('aria-hidden', 'true');
         menuButton.setAttribute('aria-expanded', 'false');
+
+        // Retire la classe no-scroll lorsque le menu se ferme
+        document.body.classList.remove('no-scroll');
     }
 });
 
 
 
 
-// Sélection des éléments du carrousel
+
+// carrousel
 const carousel = document.querySelector('.carousel');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
@@ -57,7 +68,7 @@ if (prevButton && nextButton && carousel) {
 
 
 
-//autres projets accordéons
+// accordéons - autres projets
 console.log("Script.js chargé avec succès");
 
 
