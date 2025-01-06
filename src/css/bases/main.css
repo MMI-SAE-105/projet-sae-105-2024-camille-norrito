@@ -161,12 +161,25 @@ img {
     
 }
 
+.parent-class {
+    display: flex;
+    justify-content: flex-end;
+} 
+
 .separator__right {
     display: inline-block;
     width: 50%;
     height: 1px;
     background-color: black;
-    margin: 45px 0px 55px 215px;
-    
+    margin: 45px 0px 55px auto;
+    align-self: flex-end !important;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .separator__right {
+        width: 50%;
+        margin-left: 50%;
+    }
 }
 

@@ -13,13 +13,6 @@ menuButton.addEventListener('click', () => {
     menu.classList.toggle('menu--open', isMenuOpen);
     menuButton.classList.toggle('menu--open', isMenuOpen);
 
-    // Ajoute ou retire la classe no-scroll au body
-    if (isMenuOpen) {
-        document.body.classList.add('no-scroll');
-    } else {
-        document.body.classList.remove('no-scroll');
-    }
-
     // Met à jour les attributs d'accessibilité
     menu.setAttribute('aria-hidden', !isMenuOpen);
     menuButton.setAttribute('aria-expanded', isMenuOpen);
@@ -33,12 +26,8 @@ document.addEventListener('click', (e) => {
         menuButton.classList.remove('menu--open');
         menu.setAttribute('aria-hidden', 'true');
         menuButton.setAttribute('aria-expanded', 'false');
-
-        // Retire la classe no-scroll lorsque le menu se ferme
-        document.body.classList.remove('no-scroll');
     }
 });
-
 
 
 
