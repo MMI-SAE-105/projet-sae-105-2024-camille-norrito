@@ -18,7 +18,7 @@
     position: absolute;
     left: 15px;
     top: 0;
-    width: 0.5px;
+    width: 1px;
     height: 100%;
     background-color: var(--black);
     z-index: 0;
