@@ -58,9 +58,6 @@ if (prevButton && nextButton && carousel) {
 
 
 // accordéons - autres projets
-console.log("Script.js chargé avec succès");
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const projectItems = document.querySelectorAll(".project__item");
 
@@ -68,20 +65,31 @@ document.addEventListener("DOMContentLoaded", () => {
         const logo = item.querySelector(".project__logo");
 
         if (logo) {
-            logo.addEventListener("click", () => {
-                console.log("Logo cliqué :", logo.alt); // Affiche dans la console le logo cliqué
+            // Gestion du clic sur le logo
+            logo.addEventListener("click", (e) => {
+                e.stopPropagation(); // Empêche la propagation du clic vers l'accordéon
+                const link = item.getAttribute("data-link"); // Récupère l'URL du lien
+                if (link) {
+                    window.open(link, "_blank"); // Ouvre le site dans un nouvel onglet
+                } else {
+                    console.error("Lien introuvable pour cet élément :", item);
+                }
+            });
+
+            // Gestion du clic sur l'accordéon
+            item.addEventListener("click", () => {
+                console.log("Accordéon cliqué :", item); // Debugging dans la console
                 projectItems.forEach((el) => {
                     if (el !== item) el.classList.remove("active");
                 });
-
                 item.classList.toggle("active");
-                console.log("Classe active ajoutée :", item.classList.contains("active"));
             });
         } else {
             console.error("Logo non trouvé pour cet élément :", item);
         }
     });
 });
+
 
 // Animation du vinyle
 const vinyle = document.getElementById('vinyle');
