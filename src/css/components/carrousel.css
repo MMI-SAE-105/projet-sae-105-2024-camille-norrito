@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-/* Carrousel - conteneur des items */
+
 .carousel {
     display: flex;
     overflow-x: auto;
@@ -21,7 +21,7 @@
     background-color: transparent;
 }
 
-/* Items du carrousel */
+
 .carousel-item {
     flex: 0 0 calc(100% - 40px);
     scroll-snap-align: center;
@@ -37,7 +37,7 @@
     display: block;
 }
 
-/* Boutons de navigation */
+
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -45,27 +45,27 @@
     background-color: var(--white);
     color: var(--orange);
     text-decoration: none;
-    border: 2px solid var(--orange);
+    border: 2px solid var(--light-orange);
     border-radius: 40px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     z-index: 10;
-    /* Place les boutons devant les images */
 }
 
 .carousel-button.prev-button {
-    background-color: var(--light-orange);
+    background-color: var(--orange);
     color: var(--beige);
     left: 10px;
 }
 
 .carousel-button.next-button {
-    background-color: var(--light-orange);
+    background-color: var(--orange);
     color: var(--beige);
     right: 10px;
 }
 
 .carousel-button:hover {
     background-color: var(--light-orange);
+    border: 2px solid var(--orange);
 }
 

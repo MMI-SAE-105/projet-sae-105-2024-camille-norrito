@@ -27,6 +27,7 @@
 
 
 /* Components */
+@import "./components/animation-vinyle.css";
 @import "./components/apropos.css";
 @import "./components/autresprojets.css";
 @import "./components/fonts.css";

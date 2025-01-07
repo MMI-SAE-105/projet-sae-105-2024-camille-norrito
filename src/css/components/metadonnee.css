@@ -1,9 +1,7 @@
 .content__section {
     display: flex;
     flex-direction: column;
-    /* Organise les enfants en colonne */
     align-items: flex-start;
-    /* Aligne les éléments par défaut à gauche */
     position: relative;
     padding-bottom: 35px;
     gap: 20px;

@@ -18,12 +18,10 @@
     overflow: visible;
     transition: height 0.3s ease, padding 0.3s ease;
     height: 80px;
-    /* Hauteur par défaut pour afficher uniquement le logo */
     text-align: center;
-    /* Centre les éléments */
 }
 
-/* Par défaut, cache les noms et titres */
+
 .project__name,
 .project__title {
     display: none;
@@ -34,18 +32,17 @@
     padding: 20px;
 }
 
-/* Montre les noms et titres lorsque .active est appliqué */
+
 .project__item.active .project__name,
 .project__item.active .project__title {
     display: block !important;
 }
 
-/* Centre le logo */
+
 .project__logo {
     display: block;
     margin: 0 auto;
     width: 70px;
-    /* Ajuste la taille du logo */
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -54,9 +51,8 @@
     transform: scale(1.1);
 }
 
-/* Animation pour ouverture */
+
 .project__item.active {
     height: auto;
-    /* Permet à l'article de s'agrandir */
     padding: 20px;
 }

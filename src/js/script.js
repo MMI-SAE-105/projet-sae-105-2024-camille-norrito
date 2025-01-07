@@ -83,4 +83,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Animation du vinyle
+const vinyle = document.getElementById('vinyle');
+const audio = document.getElementById('audio');
+
+// État de lecture (initialement arrêté)
+let isPlaying = false;
+
+// Gestion du clic sur le vinyle
+vinyle.addEventListener('click', () => {
+    if (!isPlaying) {
+        // Démarrer la musique
+        audio.play();
+        // Lancer l'animation
+        vinyle.style.animationPlayState = 'running';
+        isPlaying = true;
+    } else {
+        // Mettre la musique en pause
+        audio.pause();
+        // Arrêter l'animation
+        vinyle.style.animationPlayState = 'paused';
+        isPlaying = false;
+    }
+});
+
+// Arrêter l'animation quand la musique se termine
+audio.addEventListener('ended', () => {
+    vinyle.style.animationPlayState = 'paused';
+    isPlaying = false;
+});
 

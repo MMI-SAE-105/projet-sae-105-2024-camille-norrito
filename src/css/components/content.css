@@ -1,11 +1,16 @@
 .content__image-right {
     display: block;
-    margin-left: auto;
+    position: relative;
+    margin-left: 35%;
     margin-right: 0;
     width: auto;
-    max-width: 70%;
+    max-width: 75%;
 }
 
+.content--overflow-hidden {
+    overflow: hidden;
+    position: relative;
+}
 
 .content__image-portrait {
     max-width: 60%;
@@ -23,7 +28,7 @@
 .content__legende-portrait {
     display: block;
     font-style: italic;
-    margin : 5px 0px 4px 87px !important;
+    margin: 5px 0px 4px 87px !important;
     padding-bottom: 40px;
 }
 

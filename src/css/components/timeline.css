@@ -1,4 +1,3 @@
-/* Conteneur principal de la frise */
 .timeline {
     position: relative;
     padding: 50px 20px;
@@ -10,7 +9,6 @@
 
 .timeline__container {
     position: relative;
-    
 }
 
 .timeline__container::before {
@@ -24,7 +22,7 @@
     z-index: 0;
 }
 
-/* Conteneur de chaque élément */
+
 .timeline__item {
     position: relative;
     margin-bottom: 40px;
@@ -76,7 +74,7 @@
 
 }
 
-/* Image */
+
 .timeline__image {
     display: block;
     width: 65%;
@@ -85,7 +83,7 @@
     object-fit: cover;
 }
 
-/* Année */
+
 .timeline__year {
     font-size: 1.2rem;
     font-weight: bold;
@@ -93,7 +91,7 @@
     margin-bottom: 10px;
 }
 
-/* Description */
+
 .timeline__description {
     font-size: 1rem;
     color: var(--brown-gray);

@@ -125,7 +125,6 @@
     display: flex;
     justify-content: center;
     gap: 10px ;
-    /* Espacement entre les icônes */
 }
 
 .footer__icon {
@@ -165,4 +164,3 @@
     text-decoration: underline;
     color: var(--orange);
 }
-
