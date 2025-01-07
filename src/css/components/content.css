@@ -1,10 +1,10 @@
 .content__image-right {
     display: block;
     position: relative;
-    margin-left: 35%;
+    margin-left: 20%;
     margin-right: 0;
     width: auto;
-    max-width: 75%;
+    max-width: 90%;
 }
 
 .content--overflow-hidden {
