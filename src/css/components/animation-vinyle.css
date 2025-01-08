@@ -14,3 +14,9 @@
     cursor: pointer;
 }
 
+.vinyle-instruction {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--brown-gray);
+    font-style: italic;
+}
