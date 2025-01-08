@@ -1,0 +1,59 @@
+/* Styles généraux */
+.main--error {
+    text-align: center;
+    padding: 20px;
+}
+
+.error h1 {
+    font-size: 8rem;
+    font-family: var(--font-title);
+    color: var(--light-orange);
+    margin: 0;
+}
+
+.error p {
+    font-size: 1.5rem;
+    color: var(--brown-gray);
+    margin: 20px 0;
+    font-family: var(--font-paragraph);
+}
+
+.error a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--light-orange);
+    font-size: 1.2rem;
+    font-family: var(--font-alt);
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.error a:hover {
+    background-color: var(--orange);
+    transform: scale(1.1);
+}
+
+.error a:focus {
+    outline: 2px dashed var(--darkgray);
+    outline-offset: 3px;
+}
+
+
+
+@media (max-width: 768px) {
+    .error h1 {
+        font-size: 5rem;
+    }
+
+    .error p {
+        font-size: 1.2rem;
+    }
+
+    .error a {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
